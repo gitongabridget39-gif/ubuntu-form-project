@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Opinion Form</title>
+</head>
+<body>
+    <header>
+        <h1>Ubuntu Opinion Form</h1>
+        <p>Welcome to this Ubuntu opinion form, where users can enter their personal details and share their thoughts on the idea of togetherness.</p>
+    </header>
+
+    <nav>
+        <p>
+            <a href="#instructions">Instructions</a> |
+            <a href="#form-section">Form</a>
+        </p>
+    </nav>
+
+    <main>
+        <section id="instructions">
+            <h2>Form Instructions</h2>
+            <p>Please complete the form by entering your first name, last name, date of birth, gender, and your opinion on the phrase <strong>Ubuntu</strong>.</p>
+        </section>
+
+        <section id="form-section">
+            <h2>Personal Details Form</h2>
+
+            <form>
+                <fieldset>
+                    <legend>Name Details</legend>
+
+                    <p>
+                        <label for="first-name">First Name:</label><br>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </p>
+
+                    <p>
+                        <label for="last-name">Last Name:</label><br>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Basic Information</legend>
+
+                    <p>
+                        <label for="dob">Date of Birth:</label><br>
+                        <input type="date" id="dob" name="dob" required>
+                    </p>
+
+                    <p>Gender:</p>
+                    <p>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label><br>
+
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Opinion Section</legend>
+
+                    <p>
+                        <label for="opinion">What is your opinion on the phrase "Ubuntu" (togetherness)?</label><br>
+                        <textarea id="opinion" name="opinion" rows="5" cols="40"></textarea>
+                    </p>
+                </fieldset>
+
+                <section>
+                    <h3>Form Actions</h3>
+                    <p>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Clear">
+                        <button type="button">Cancel</button>
+                    </p>
+                </section>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Ubuntu Opinion Form</p>
+    </footer>
+</body>
+</html>

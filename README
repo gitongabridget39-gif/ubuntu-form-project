@@ -1,0 +1,22 @@
+# ubuntu-form-project
+
+This is a simple HTML form project for learning web structure and semantic HTML.
+
+## Contents
+- First name and last name
+- Date of birth
+- Gender
+- Opinion on the phrase "Ubuntu"
+- Clear, submit, and cancel buttons
+
+## Purpose
+This project demonstrates understanding of HTML structure using elements such as:
+- header
+- nav
+- main
+- section
+- form
+- fieldset
+- legend
+- aside
+- footer
