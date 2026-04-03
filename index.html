@@ -8,26 +8,66 @@
 <body>
     <header>
         <h1>Ubuntu Opinion Form</h1>
-        <p>Welcome to this Ubuntu opinion form, where users can enter their personal details and share their thoughts on the idea of togetherness.</p>
+        <p>
+            HTML forms are used to collect input from users in a web application.
+            The information entered can then be processed and stored for later use.
+        </p>
     </header>
 
-    <nav>
-        <p>
-            <a href="#instructions">Instructions</a> |
-            <a href="#form-section">Form</a>
-        </p>
-    </nav>
-
     <main>
-        <section id="instructions">
-            <h2>Form Instructions</h2>
-            <p>Please complete the form by entering your first name, last name, date of birth, gender, and your opinion on the phrase Ubuntu.</p>
+        <section>
+            <h2>Components of an HTML Form</h2>
+            <dl>
+                <dt>Form</dt>
+                <dd>
+                    The main container that holds all form controls.
+                    Purpose: collects user input in one place.
+                    Attributes: <code>action</code>, <code>method</code>.
+                </dd>
 
-            <h2>Parts of the Form</h2>
-            <p>The form contains name fields, a date of birth field, gender options, an opinion box, and action buttons for submit, clear, and cancel.</p>
+                <dt>Label</dt>
+                <dd>
+                    Describes an input field for the user.
+                    Purpose: tells the user what to enter.
+                    Attribute: <code>for</code>.
+                </dd>
+
+                <dt>Input</dt>
+                <dd>
+                    Accepts user data such as names, dates, and gender options.
+                    Purpose: captures typed or selected data.
+                    Attributes: <code>type</code>, <code>id</code>, <code>name</code>, <code>value</code>.
+                </dd>
+
+                <dt>Textarea</dt>
+                <dd>
+                    Provides space for a longer response.
+                    Purpose: captures an opinion or comment.
+                    Attributes: <code>id</code>, <code>name</code>, <code>rows</code>, <code>cols</code>.
+                </dd>
+
+                <dt>Fieldset</dt>
+                <dd>
+                    Groups related controls together.
+                    Purpose: organizes the form into sections.
+                </dd>
+
+                <dt>Legend</dt>
+                <dd>
+                    Gives a title to each fieldset.
+                    Purpose: identifies a group of fields.
+                </dd>
+
+                <dt>Button</dt>
+                <dd>
+                    Performs an action when clicked.
+                    Purpose: submit, clear, or cancel the form.
+                    Attribute: <code>type</code>.
+                </dd>
+            </dl>
         </section>
 
-        <section id="form-section">
+        <section>
             <h2>Personal Details Form</h2>
 
             <form>
@@ -36,12 +76,12 @@
 
                     <p>
                         <label for="first-name">First Name:</label><br>
-                        <input type="text" id="first-name" name="first-name">
+                        <input type="text" id="first-name" name="first-name" required>
                     </p>
 
                     <p>
                         <label for="last-name">Last Name:</label><br>
-                        <input type="text" id="last-name" name="last-name">
+                        <input type="text" id="last-name" name="last-name" required>
                     </p>
                 </fieldset>
 
@@ -50,7 +90,7 @@
 
                     <p>
                         <label for="dob">Date of Birth:</label><br>
-                        <input type="date" id="dob" name="dob">
+                        <input type="date" id="dob" name="dob" required>
                     </p>
 
                     <p>Gender:</p>
@@ -67,19 +107,16 @@
                     <legend>Opinion Section</legend>
 
                     <p>
-                        <label for="opinion">What is your opinion on the phrase "Ubuntu" (togetherness)?</label><br>
+                        <label for="opinion">What is your opinion on the phrase "Ubuntu" (togetherness)?</label><br>>
                         <textarea id="opinion" name="opinion" rows="5" cols="40"></textarea>
                     </p>
                 </fieldset>
 
-                <section>
-                    <h3>Form Actions</h3>
-                    <p>
-                        <input type="submit" value="Submit">
-                        <input type="reset" value="Clear">
-                        <button type="button">Cancel</button>
-                    </p>
-                </section>
+                <p>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Clear">
+                    <button type="button">Cancel</button>
+                </p>
             </form>
         </section>
     </main>
