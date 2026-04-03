@@ -1,128 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ubuntu Opinion Form</title>
-</head>
-<body>
-    <header>
-        <h1>Ubuntu Opinion Form</h1>
-        <p>
-            HTML forms are used to collect input from users. The information entered
-            can be processed by a web application and stored for later use.
-        </p>
-    </header>
+<section id="components">
+    <h2>Parts of an HTML Form</h2>
 
-    <nav>
-        <p>
-            <a href="#components">Form Components</a> |
-            <a href="#form-section">Form</a>
-        </p>
-    </nav>
-
-    <main>
-        <section id="components">
-            <h2>Parts of an HTML Form</h2>
-            <dl>
-                <dt>&lt;form&gt;</dt>
-                <dd>
-                    Defines the form area that contains all form controls.
-                    Common attributes: <code>action</code>, <code>method</code>.
-                </dd>
-
-                <dt>&lt;label&gt;</dt>
-                <dd>
-                    Gives a name to an input field so the user knows what to enter.
-                    Common attribute: <code>for</code>.
-                </dd>
-
-                <dt>&lt;input&gt;</dt>
-                <dd>
-                    Used to collect user data such as text, dates, and radio options.
-                    Common attributes: <code>type</code>, <code>id</code>, <code>name</code>, <code>value</code>.
-                </dd>
-
-                <dt>&lt;textarea&gt;</dt>
-                <dd>
-                    Used when the user needs to enter longer text such as an opinion.
-                    Common attributes: <code>id</code>, <code>name</code>, <code>rows</code>, <code>cols</code>.
-                </dd>
-
-                <dt>&lt;fieldset&gt;</dt>
-                <dd>
-                    Groups related form elements together.
-                </dd>
-
-                <dt>&lt;legend&gt;</dt>
-                <dd>
-                    Gives a title to a fieldset.
-                </dd>
-
-                <dt>&lt;button&gt;</dt>
-                <dd>
-                    Creates clickable buttons such as submit, clear, or cancel.
-                    Common attribute: <code>type</code>.
-                </dd>
-            </dl>
-        </section>
-
-        <section id="form-section">
-            <h2>Personal Details Form</h2>
-
-            <form>
-                <fieldset>
-                    <legend>Name Details</legend>
-
-                    <p>
-                        <label for="first-name">First Name:</label><br>
-                        <input type="text" id="first-name" name="first-name" required>
-                    </p>
-
-                    <p>
-                        <label for="last-name">Last Name:</label><br>
-                        <input type="text" id="last-name" name="last-name" required>
-                    </p>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Basic Information</legend>
-
-                    <p>
-                        <label for="dob">Date of Birth:</label><br>
-                        <input type="date" id="dob" name="dob" required>
-                    </p>
-
-                    <p>Gender:</p>
-                    <p>
-                        <input type="radio" id="male" name="gender" value="Male">
-                        <label for="male">Male</label><br>
-
-                        <input type="radio" id="female" name="gender" value="Female">
-                        <label for="female">Female</label>
-                    </p>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Opinion</legend>
-
-                    <p>
-                        <label for="opinion">Opinion on the phrase "Ubuntu":</label><br>
-                        <textarea id="opinion" name="opinion" rows="5" cols="40"></textarea>
-                    </p>
-                </fieldset>
-
-                <p>
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Clear">
-                    <button type="button">Cancel</button>
-                </p>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>Ubuntu Opinion Form</p>
-    </footer>
-</body>
-</html>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Form Part</th>
+                <th>Purpose</th>
+                <th>Main Attributes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;form&gt;</code></td>
+                <td>Defines the area that contains all form controls.</td>
+                <td>action, method</td>
+            </tr>
+            <tr>
+                <td><code>&lt;label&gt;</code></td>
+                <td>Gives a name to an input field.</td>
+                <td>for</td>
+            </tr>
+            <tr>
+                <td><code>&lt;input&gt;</code></td>
+                <td>Collects user data such as text, dates, and radio options.</td>
+                <td>type, id, name, value</td>
+            </tr>
+            <tr>
+                <td><code>&lt;textarea&gt;</code></td>
+                <td>Allows the user to enter longer text.</td>
+                <td>id, name, rows, cols</td>
+            </tr>
+            <tr>
+                <td><code>&lt;fieldset&gt;</code></td>
+                <td>Groups related form elements together.</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td><code>&lt;legend&gt;</code></td>
+                <td>Provides a title
